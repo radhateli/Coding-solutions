@@ -1,15 +1,10 @@
-def is_leap(year):
-    leap = False
-    
-    # Write your logic here
-    if year % 400 == 0:
-        return True
-    elif year % 100 == 0:
-        return False
-    elif year % 4 == 0:
-        return True
-    else:
-        return False
-    
-    return leap
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 
+n = int(input())
+
+countries = set()
+
+for _ in range(n):
+    countries.add(input())
+
+print(len(countries))
