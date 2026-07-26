@@ -1,4 +1,4 @@
-# Write a function
+# Set .add()
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -50,24 +50,19 @@ Output the total number of distinct country stamps on a single line.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-26T06:00:30.261Z  
+**Submitted:** 2026-07-26T06:14:19.215Z  
 
 ```py
-def is_leap(year):
-    leap = False
-    
-    # Write your logic here
-    if year % 400 == 0:
-        return True
-    elif year % 100 == 0:
-        return False
-    elif year % 4 == 0:
-        return True
-    else:
-        return False
-    
-    return leap
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 
+n = int(input())
+
+countries = set()
+
+for _ in range(n):
+    countries.add(input())
+
+print(len(countries))
 
 ```
 
