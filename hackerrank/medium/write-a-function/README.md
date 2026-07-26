@@ -1,4 +1,4 @@
-# Arithmetic Operators
+# Write a function
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -41,16 +41,24 @@ The function must return a Boolean value (True/False).  Output is handled by the
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T11:32:25.165Z  
+**Submitted:** 2026-07-26T05:59:46.599Z  
 
 ```py
-if __name__ == '__main__':
-    a = int(input())
-    b = int(input())
-    print(a+b)
-    print(a-b)
-    print(a*b)
+def is_leap(year):
+    leap = False
     
+    # Write your logic here
+    if year % 400 == 0:
+        return True
+    elif year % 100 == 0:
+        return False
+    elif year % 4 == 0:
+        return True
+    else:
+        return False
+    
+    return leap
+
 
 ```
 
