@@ -87,16 +87,16 @@ From sale_id = 7, we can conclude that Apple was sold for 9000 in the year 2011.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 1490 ms (beats 18.68%)  
+**Runtime:** 1387 ms (beats 35.11%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-07-28T16:52:51.060Z  
+**Submitted:** 2026-07-31T10:28:23.435Z  
 
 ```sql
 # Write your MySQL query statement below
 SELECT product_name, year, price 
 FROM Sales as a 
 LEFT JOIN Product as b 
-ON a.product_id = b.product_id 
+ON a.product_id = b.product_id;
 ```
 
 ---
