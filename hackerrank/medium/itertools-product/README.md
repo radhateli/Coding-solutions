@@ -65,7 +65,7 @@ The second line contains the space separated elements of list $B$.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-30T07:38:50.400Z  
+**Submitted:** 2026-08-30T11:23:32.554Z  
 
 ```py
 # Enter your code here. Read input from STDIN. Print output to STDOUT
