@@ -1,4 +1,4 @@
-# itertools.product()
+# itertools.permutations()
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -50,19 +50,25 @@ Print the permutations of the string $S$ on separate lines.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-30T11:23:36.821Z  
+**Submitted:** 2026-08-31T14:41:11.691Z  
 
 ```py
 # Enter your code here. Read input from STDIN. Print output to STDOUT
+S, k = input().split()
+k = int(k)
 
-from itertools import product
+S = sorted(S)
 
-A = list(map(int, input().split()))
-B = list(map(int, input().split()))
+def generate(current, remaining):
+    if len(current) == k:
+        print(''.join(current))
+        return
 
-result = product(A, B)
+    for i in range(len(remaining)):
+        generate(current + [remaining[i]], 
+                 remaining[:i] + remaining[i+1:])
 
-print(*result)
+generate([], S)
 
 ```
 
