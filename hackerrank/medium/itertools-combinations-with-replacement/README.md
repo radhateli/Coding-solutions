@@ -1,4 +1,4 @@
-# itertools.combinations()
+# itertools.combinations_with_replacement()
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -44,19 +44,18 @@ The string contains only *UPPERCASE* characters.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-08T10:20:35.678Z  
+**Submitted:** 2026-09-08T10:24:39.602Z  
 
 ```py
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-from itertools import combinations
+from itertools import combinations_with_replacement
 
 S, k = input().split()
-S = sorted(S)
 k = int(k)
+S = sorted(S)
 
-for i in range(1, k + 1):
-    for combination in combinations(S, i):
-        print(''.join(combination))
+for x in combinations_with_replacement(S, k):
+    print(''.join(x))
 
 ```
 
