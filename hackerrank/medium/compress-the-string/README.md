@@ -1,4 +1,4 @@
-# itertools.combinations_with_replacement()
+# Compress the String!
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -53,18 +53,16 @@ Also, note the single space within each compression and between the compressions
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-08T10:24:44.118Z  
+**Submitted:** 2026-09-08T10:28:05.380Z  
 
 ```py
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-from itertools import combinations_with_replacement
+from itertools import groupby
 
-S, k = input().split()
-k = int(k)
-S = sorted(S)
+S = input()
 
-for x in combinations_with_replacement(S, k):
-    print(''.join(x))
+for key, group in groupby(S):
+    print((len(list(group)), int(key)), end=" ")
 
 ```
 
