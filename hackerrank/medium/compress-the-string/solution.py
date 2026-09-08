@@ -1,9 +1,7 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-from itertools import combinations_with_replacement
+from itertools import groupby
 
-S, k = input().split()
-k = int(k)
-S = sorted(S)
+S = input()
 
-for x in combinations_with_replacement(S, k):
-    print(''.join(x))
+for key, group in groupby(S):
+    print((len(list(group)), int(key)), end=" ")
