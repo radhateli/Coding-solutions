@@ -45,7 +45,7 @@ Print the different combinations of string $S$ on separate lines.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-08T10:20:18.714Z  
+**Submitted:** 2026-09-08T10:20:33.073Z  
 
 ```py
 # Enter your code here. Read input from STDIN. Print output to STDOUT
