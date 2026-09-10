@@ -52,18 +52,18 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 679 ms (beats 53.42%)  
+**Runtime:** 4056 ms (beats 5.02%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-07-13T15:36:25.303Z  
+**Submitted:** 2026-09-10T13:58:38.573Z  
 
 ```sql
 # Write your MySQL query statement below
 select user_id, concat(
         UPPER(substring(name,1,1)),
         LOWER(substring(name,2))
-    ) as name
+       ) as name
 from Users
-order by user_id
+order by user_id;
 ```
 
 ---
