@@ -64,16 +64,16 @@ For 2020-06-02, the Sold item is (Mask), we just return it.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 485 ms (beats 47.04%)  
+**Runtime:** 1481 ms (beats 5.02%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-04T10:39:19.533Z  
+**Submitted:** 2026-09-10T13:54:48.571Z  
 
 ```sql
 # Write your MySQL query statement below
 select sell_date, count(distinct product) as num_sold, 
             GROUP_CONCAT(distinct product) as products 
 from Activities 
-group by sell_date 
+group by sell_date;
 ```
 
 ---
