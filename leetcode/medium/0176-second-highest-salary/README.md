@@ -69,16 +69,16 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 269 ms (beats 87.36%)  
+**Runtime:** 1400 ms (beats 5.00%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-16T09:25:10.363Z  
+**Submitted:** 2026-09-10T13:55:55.065Z  
 
 ```sql
 # Write your MySQL query statement below
 select max(salary) as SecondHighestSalary
 from Employee 
 where salary < (select max(salary) 
-                 from Employee )
+                 from Employee);
 ```
 
 ---
