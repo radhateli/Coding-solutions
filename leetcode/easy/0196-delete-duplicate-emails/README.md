@@ -58,21 +58,18 @@ Explanation: john@example.com is repeated two times. We keep the row with the sm
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 615 ms (beats 90.23%)  
+**Runtime:** 698 ms (beats 89.90%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-02T18:06:00.603Z  
+**Submitted:** 2026-09-10T13:57:51.093Z  
 
 ```sql
 # Write your MySQL query statement below
 delete from Person 
-where id not in (
-    select id 
-    from (
-        select min(id) AS id
-        from Person 
-        group by email
-        ) temp
-    )
+where id not in (select id 
+                 from (select min(id) AS id
+                       from Person 
+                       group by email
+                       ) temp);
 ```
 
 ---
