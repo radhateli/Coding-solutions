@@ -58,9 +58,9 @@ Explanation: Bob and George both have a condition that starts with DIAB1.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 4551 ms (beats 5.00%)  
+**Runtime:** 537 ms (beats 18.24%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-09-10T13:58:21.990Z  
+**Submitted:** 2026-09-10T13:58:37.119Z  
 
 ```sql
 # Write your MySQL query statement below
