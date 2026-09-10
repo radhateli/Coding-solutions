@@ -97,9 +97,9 @@ Products with product_id = 5 is ordered in February a total of (50 + 50) = 100.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 921 ms (beats 19.94%)  
+**Runtime:** 914 ms (beats 29.48%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-07T14:12:33.860Z  
+**Submitted:** 2026-09-10T13:54:08.636Z  
 
 ```sql
 # Write your MySQL query statement below
