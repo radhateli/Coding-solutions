@@ -4,24 +4,40 @@
 
 ## Problem
 
-_Description not available._
+### Practice - Create Table with Constraints
+
+Listen
+
+The Query written in the console is trying to create a table and add data to the same.
+ **Debug this query**  to execute it successfully!
 
 ## Solution
 
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T14:01:39.518Z  
+**Submitted:** 2026-09-14T14:03:26.254Z  
 
 ```sql
-/*Write a query which does the following
-- Delete the entire row of the customer with customer id 1.
-- Output the entire table once the above action is performed. */
+/* Debug this query */
 
-DELETE FROM customer 
-WHERE Id = 1;
+CREATE TABLE customer
+(
+  Id INT PRIMARY KEY,
+  Name VARCHAR(30),
+  Age INT,
+  Address VARCHAR(30),
+  email VARCHAR(30) UNIQUE
+);
+INSERT INTO customer(Id,Name,Age,Address,email)
+VALUES  (1, 'John Smith', 25,  '123 Main St','john@example.com'),
+        (2, 'Sarah Johnson', 30,'456 Broadway','sarah@example.com'),
+        (3, 'Michael Brown', 45,  '789 5th Ave','michael@example.com'),
+        (4, 'Jessica Davis', 28,  '321 Elm St','Jessica@example.com');
+        
+SELECT * FROM customer;
 
-SELECT * FROM customer; 
+
 ```
 
 ---
