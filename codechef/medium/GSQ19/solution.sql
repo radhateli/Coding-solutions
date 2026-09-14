@@ -1,4 +1,5 @@
-/* Write a query to find the unique origin locations */
+/* Write a query to identify flights that originate out of Mumbai */
 
-Select Distinct Origin 
-from Flights;
+SELECT *
+FROM Flights
+WHERE Origin = 'Mumbai';
