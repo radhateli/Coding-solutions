@@ -4,55 +4,45 @@
 
 ## Problem
 
-### update table
+### Practice Problem - Alter table
 
 Listen
 
-The  **UPDATE**  statement is used to edit a row or multiple rows in a table.
-Below is the query to Set the Age as 6, for the student with student_id - 23 to the existing table student.
+You are given a table -  **employee**  (mentioned below)
 
-```
-UPDATE student
-SET Age = 6
-WHERE student_id = 23;
+Write a query which does the following
 
-```
-
-The 'WHERE' condition can be applied for any column. We will learn more about 'WHERE' in the next module
-
-### Task
-
-Write a query to do the following
-
-- Set the Department as 'HR', for the employee with employee_id - 02 to the existing table employee
-- Output all the entries of the table
-- Original table has the following entries
+- Add a new column 'Hourly_Pay' to the table employee and set the value as 100 by default.
+- Output the entire table
+- Original table has the following rows
 
 ```
 ┌─────────────┬────────────────┬────────────┐
 │ Employee_id │ Employee_Name  │ Department │
 ├─────────────┼────────────────┼────────────┤
 │ 1           │ Kayla Thompson │ Sales      │
-│ 2           │ Ethan Chen     │ Operations │
-│ 3           │ Julia Lee      │ Hr         │
+│ 2           │ Ethan Chen     │ Hr         │
+│ 3           │ Julia Lee      │ Operations │
+│ 4           │ Marcus Garcia  │ Hr         │
 └─────────────┴────────────────┴────────────┘
 
 ```
-
-Code it out in the IDE.
 
 ## Solution
 
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T13:13:09.849Z  
+**Submitted:** 2026-09-14T13:16:49.204Z  
 
 ```sql
-/*Write a query to set the Department as 'HR', for the employee with employee_id 2 to the existing table employee. */
-UPDATE employee 
-SET Department = 'Hr'
-WHERE employee_id = 2;
+/* Write a query which does the following
+- Add a new column 'Hourly_Pay' to the table employee and set the value as 100 by default.
+- Output the entire table
+*/
+
+ALTER TABLE employee
+ADD COLUMN Hourly_Pay  INT default 100;
 
 SELECT *
 FROM employee;
