@@ -4,27 +4,22 @@
 
 ## Problem
 
-### DISTINCT
+### WHERE
 
 Listen
 
-In the  **Flights**  table, what all 'Origins' exist? The following query should give us the result.
+The  **WHERE**  clause helps us obtain information which meets specific conditions.
+
+In the previous problem, we saw the 'Origins' of flights.
+Let us try and identify flights that originate out of 'Mumbai' using the following syntax.
 
 ```
-     Select Origin 
-     from Flights;
-
-```
-
-However, if we want to find the  **unique**  origin locations, we will use the  **DISTINCT**  syntax in the following format.
-
-```
-     Select Distinct Origin 
-     from Flights;
+    Select *
+    from Flights
+    WHERE Origin = 'Mumbai';
 
 ```
 
-Write the above query in the IDE to get the  **unique**  origin locations.
 Code it out in the IDE.
 
 ## Solution
@@ -32,13 +27,14 @@ Code it out in the IDE.
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T14:06:30.113Z  
+**Submitted:** 2026-09-14T14:07:22.061Z  
 
 ```sql
-/* Write a query to find the unique origin locations */
+/* Write a query to identify flights that originate out of Mumbai */
 
-Select Distinct Origin 
-from Flights;
+SELECT *
+FROM Flights
+WHERE Origin = 'Mumbai';
 ```
 
 ---
