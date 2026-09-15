@@ -29,7 +29,7 @@ The formula for perimeter is 2 * (length + breadth).
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-15T17:23:12.269Z  
+**Submitted:** 2026-09-15T17:23:18.711Z  
 
 ```py
 # Update the '_' below to solve the problem
