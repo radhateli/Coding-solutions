@@ -4,44 +4,21 @@
 
 ## Problem
 
-### Practice - Filter with multiple Like patterns
-
-Listen
-
-Let us now solve a practice problem which tests what we learnt in this sub-module -  **AND, OR & LIKE**.
-
-You need to write a query with the following conditions
-
-- Destination city end in 'o' AND
-- Origin city starts with 'M'
-
-```
-Expected Output
-Flights
-┌──────────────┬────────────────┬────────┬────────┬─────────────┐
-│ Passenger_id │ Passenger_name │ Gender │ Origin │ Destination │
-├──────────────┼────────────────┼────────┼────────┼─────────────┤
-│ 10004        │ Anthony        │ Male   │ Mumbai │ Cairo       │
-└──────────────┴────────────────┴────────┴────────┴─────────────┘
-
-```
+_Description not available._
 
 ## Solution
 
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-15T17:00:31.676Z  
+**Submitted:** 2026-09-15T16:58:30.119Z  
 
 ```sql
-/* write a query with the following conditions
-- Destination city end in 'o' AND
-- Origin city starts with 'M' 
-*/
+/* Write a query that returns the rows which meet the following conditions
+- Passenger names that end with 'a' */
 
 SELECT * FROM Flights
-WHERE Destination LIKE '%O'
-AND Origin LIKE 'M%'
+WHERE Passenger_name LIKE '%a';
 ```
 
 ---
