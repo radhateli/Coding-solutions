@@ -19,7 +19,7 @@ World
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-15T17:23:35.468Z  
+**Submitted:** 2026-09-15T17:23:39.286Z  
 
 ```cpp
 # Update the '_' below to solve the problem
