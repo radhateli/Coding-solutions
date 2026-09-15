@@ -1,8 +1,5 @@
-/* write a query with the following conditions
-- Destination city end in 'o' AND
-- Origin city starts with 'M' 
-*/
+/* Write a query that returns the rows which meet the following conditions
+- Passenger names that end with 'a' */
 
 SELECT * FROM Flights
-WHERE Destination LIKE '%O'
-AND Origin LIKE 'M%'
+WHERE Passenger_name LIKE '%a';
