@@ -13,7 +13,7 @@ Which line of code will output the text `Hi`?
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-15T17:20:13.226Z  
+**Submitted:** 2026-09-15T17:20:15.659Z  
 
 ```cpp
 # Replace the code print(__ + __) with print(21 + 40)
