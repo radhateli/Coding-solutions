@@ -1,6 +1,6 @@
-# Update the code below this line to solve the problem
+# Update your code below this line
 
-length = 45
-width = 76
+radius = 8.9
+pi = 3.14
 
-print(length * width)
+print(pi*radius*radius)
