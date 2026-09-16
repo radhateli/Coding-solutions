@@ -2,5 +2,5 @@
 - Either Origin is Mumbai or the Destination is Mumbai */
 
 SELECT * FROM Flights
-WHERE Origin = 'Mumbai'
+WHERE origin = 'Mumbai'
 OR Destination = 'Mumbai';
