@@ -1,5 +1,6 @@
-# Fix one of the variable names to make the code work
+# Update the code below this line to solve the problem
 
-first_name = "Code"
-last_name = "Chef"
-print(first_name, last_name)
+a = 23
+b = 20
+
+print(a+b)
